@@ -1,5 +1,5 @@
 # GPS-Based-Date-Time-Clock
-Arduino and Adafruit Ultimate GPS Clock using MAX7219 (8 Digit, 7-Segment Display Drivers)
+Arduino and Adafruit Ultimate GPS Clock using MAX7219 (8 Digit, 7-Segment Display Drivers).  After getting the clock to function with the Adafruit Ultimate GPS, I updated the serial interface to accommodate a Garmin GPS 18LVC instead of the Adafruit GPS device.  I found that the seconds output of the Adafruit device seemed to be about 1/2 second late about every 3 seconds afterwhich it would catch up. As an example the seconds would update as follows: 32...33...34.....35..36...37...38.....39..40.
 
 This Arduino sketch began with the max7219.h/.cpp library by Johnathan Evans.  Since this project has two or more displays (at this time), Mr. Evan's library would not work, but it was a great starting point. I attempted to use other libraries that support one or several MAX7219 drivers, but I could not get them to work at all. I used the concepts from Mr. Evan's work and began writing the Arduino sketch to not use any library functions. Writing code to remove the max7219.h libtary was successful.  At this point, the clock project is functioning and work on the circuit boards has begun.
 
